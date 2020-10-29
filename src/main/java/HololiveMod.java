@@ -267,6 +267,48 @@ public class HololiveMod implements  EditCharactersSubscriber,EditStringsSubscri
     }
 
     public void receiveEditKeywords() {
+		if (language == Settings.GameLanguage.ZHT) {
+            BaseMod.addKeyword(new String[]{"隊友"},"队友会在你回合结束时攻击，并且你受伤时队友代替你受伤。");
+            BaseMod.addKeyword(new String[]{"攻击"},"你的回合结束时，所有队友会发动攻击。");
+            BaseMod.addKeyword(new String[]{"追击"}, "在该队友攻击时会产生一些效果。");
+            BaseMod.addKeyword(new String[]{"结尾"}, "在该队友死亡时会产生一些效果。");
+            BaseMod.addKeyword(new String[]{"开幕"}, "在该队友从手牌入场时会产生一些效果。");
+            BaseMod.addKeyword(new String[]{"受伤"}, "每当该队友受到攻击，产生一些效果。");
+            BaseMod.addKeyword(new String[]{"选择"}, "从几张卡牌中选择一张，产生一些效果。默认为3张。");
+            BaseMod.addKeyword(new String[]{"魔法"}, "选择并产生效果，诗音在场效果增强。不受aki影响。");
+            BaseMod.addKeyword(new String[]{"程序"}, "抽到时消耗，如果抽牌堆不为空则抽一张牌。");
+            BaseMod.addKeyword(new String[]{"嘲讽"}, "具有嘲讽的队友成为优先攻击的对象之一。");
+            BaseMod.addKeyword(new String[]{"燃烧"}, "每死亡一个队友，每有1层受到1点伤害。");
+            BaseMod.addKeyword(new String[]{"被追猎"}, "回合结束时受到等同于负面效果种数5倍的伤害。");
+            BaseMod.addKeyword(new String[]{"组合"}, "当你卡组拥有特定队友时，产生特殊效果。");
+            BaseMod.addKeyword(new String[]{"卍组成员"}, "湊阿库娅，百鬼绫目，紫咲诗音");
+            BaseMod.addKeyword(new String[]{"索兰歌声"}, "你每召唤一个队友，每有一层使其+1/+1。");
+            BaseMod.addKeyword(new String[]{"耐久直播"}, "你回合结束时，每有一层所有队友+1生命值。");
+            BaseMod.addKeyword(new String[]{"组合：卍组"}, " #b湊阿库娅 + #b紫咲诗音 + #b百鬼绫目 ");
+            BaseMod.addKeyword(new String[]{"组合：夏色吹雪"}, " #b夏色祭 + #b白上吹雪 ");
+            BaseMod.addKeyword(new String[]{"组合：兔龙"}, " #b兔田佩克拉 + #b樱巫女 ");
+            BaseMod.addKeyword(new String[]{"组合：Gamers"}, " #b白上吹雪 + #b大神澪 + #b猫又小粥 + #b戌神沁音 ");
+            BaseMod.addKeyword(new String[]{"组合：吉祥三宝"}, " #b夜雾 + #b希薇娅 + #b黑桃影 ");
+            BaseMod.addKeyword(new String[]{"组合：金发组"}, " #b赤井心 + #b亚奇罗森 + #b愈月巧可 + #b夜空梅露 + #b不知火芙蕾雅 + #b角卷绵芽 ");
+            BaseMod.addKeyword(new String[]{"组合：FAMS"}, " #b白上吹雪 + #b大神澪 + #b大空昴 + #b百鬼绫目 ");
+            BaseMod.addKeyword(new String[]{"组合：旧猫狗"}, " #b白上吹雪 + #b大神澪 ");
+            BaseMod.addKeyword(new String[]{"组合：新猫狗"}, " #b猫又小粥 + #b戌神沁音 ");
+            BaseMod.addKeyword(new String[]{"组合：海蓝宝石"}, " #b湊阿库娅 + #b宝钟玛琳 ");
+            BaseMod.addKeyword(new String[]{"组合：空A"}, " #b时乃空 + #b友人A ");
+            BaseMod.addKeyword(new String[]{"组合：银火"}, " #b白银诺艾尔 + #b不知火芙蕾雅 ");
+            BaseMod.addKeyword(new String[]{"组合：夏紫"}, " #b夏色祭 + #b紫咲诗音 ");
+            BaseMod.addKeyword(new String[]{"组合：零期生"}, " #b时乃空 + #b友人A + #b萝卜子 + #b樱巫女 + #b星街彗星 ");
+            BaseMod.addKeyword(new String[]{"组合：一期生"}, " #b夜空梅露 + #b赤井心 + #b亚奇罗森 + #b白上吹雪 + #b夏色祭 ");
+            BaseMod.addKeyword(new String[]{"组合：二期生"}, " #b大空昴 + #b百鬼绫目 + #b湊阿库娅 + #b紫咲诗音 + #b愈月巧可 ");
+            BaseMod.addKeyword(new String[]{"组合：三期生"}, " #b兔田佩克拉 + #b润羽露西娅 + #b不知火芙蕾雅 + #b宝钟玛琳 + #b白银诺艾尔 ");
+            BaseMod.addKeyword(new String[]{"组合：四期生"}, " #b角卷绵芽 + #b常暗永远 + #b桐生可可 + #b天音彼方 + #b姬森璐娜 ");
+            BaseMod.addKeyword(new String[]{"组合：MUSIC"}, " #bAZKi + #b星街彗星 ");
+            BaseMod.addKeyword(new String[]{"组合：全员"}, " #y需要每一个！暂时没效果 ");
+            BaseMod.addKeyword(new String[]{"组合：心羊"}, " #b赤井心 + #b角卷绵芽 ");
+            BaseMod.addKeyword(new String[]{"组合：夏娜"}, " #b夏色祭 + #b姬森璐娜 ");
+            BaseMod.addKeyword(new String[]{"组合：天龙"}, " #b天音彼方 + #b桐生可可 ");
+            BaseMod.addKeyword(new String[]{"组合：CN二期生"}, " #b阿媂娅 + #b朵莉丝 + #b罗莎琳 ");
+            BaseMod.addKeyword(new String[]{"组合：Hololive-ID"}, " #bAyundaRisu + #bMoonaHoshinova + #bAiraniIofifteen ");
         if (language == Settings.GameLanguage.ZHS) {
             BaseMod.addKeyword(new String[]{"队友"},"队友会在你回合结束时攻击，并且你受伤时队友代替你受伤。");
             BaseMod.addKeyword(new String[]{"攻击"},"你的回合结束时，所有队友会发动攻击。");
